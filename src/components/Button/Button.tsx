@@ -1,7 +1,7 @@
 import './styles.css';
-import { IButtonProps } from './types';
+import { ButtonProps } from './types';
 
-function Button({name,type = 'button', onClick }:IButtonProps) {
+function Button({name,type = 'button', onClick }:ButtonProps) {
   return (
     <button onClick={onClick} className='main-button' type={type}>{name}</button>
   );

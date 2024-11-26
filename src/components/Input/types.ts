@@ -1,6 +1,6 @@
 export interface IInputProps{
   name:string;
-  type:string;
+  type:'text'|'password'|'email';
   placeholder:string;
   label:string;
   id:string;

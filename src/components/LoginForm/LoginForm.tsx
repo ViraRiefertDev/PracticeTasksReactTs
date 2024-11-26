@@ -22,7 +22,7 @@ function LoginForm() {
           label='Password'
         />
       </div>
-      <Button name='Login' type='submit' onClick={()=>{''}} />
+      <Button name='Login' type='submit' />
     </form>
   );
 }

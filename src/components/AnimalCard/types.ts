@@ -1,6 +1,6 @@
 //типизирование объекта props
 
-interface IAnimal {
+interface Animal {
   name: string;
   species: string;
   role: string;
@@ -8,6 +8,6 @@ interface IAnimal {
   image: string;
 }
 
-export interface IAnimalCardProps {
-  animalData:IAnimal;
+export interface AnimalCardProps {
+  animalData:Animal;
 }
