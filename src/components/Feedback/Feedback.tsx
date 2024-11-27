@@ -3,15 +3,15 @@ import Button from '../Button/Button';
 import { useState } from 'react';
 
 function Feedback() {
-  const [likesCount, setLikesCount] = useState(0);
-  const [dislikesCount, setDislikesCount] = useState(0);
+  const [likesCount, setLikesCount] = useState<number>(0);
+  const [dislikesCount, setDislikesCount] = useState<number>(0);
 
   const onLikeClick = (): void => {
-    setLikesCount((prevValue: number) => prevValue + 1);
+    setLikesCount((prevValue) => prevValue + 1);
   };
 
   const onDislikeClick = (): void => {
-    setDislikesCount((prevValue: number) => prevValue + 1);
+    setDislikesCount((prevValue) => prevValue + 1);
   };
 
   const onResetResultClick = ():void => {

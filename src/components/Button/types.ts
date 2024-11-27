@@ -1,5 +1,7 @@
+type ButtonType = 'submit'| 'button' | 'reset'
+
 export interface ButtonProps{
   name:string;
-  type?:'submit'| 'button' | 'reset';
+  type?:ButtonType;
   onClick?: () => void;
 }

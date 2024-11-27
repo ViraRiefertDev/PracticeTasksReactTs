@@ -1,7 +1,7 @@
-export interface IInputProps{
-  name:string;
-  type:'text'|'password'|'email';
-  placeholder:string;
-  label:string;
-  id:string;
+export interface IInputProps {
+  name: string;
+  type?: 'text' | 'password' | 'email' | 'tel';
+  placeholder?: string;
+  label?: string;
+  id?: string;
 }

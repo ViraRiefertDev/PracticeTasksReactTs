@@ -6,7 +6,7 @@ import { useState } from 'react';
 function Counter() {
   //Шаг 2 - вызываем хуки useState и передаем в него первоначальное состояние (InitialState)
   //делаем деструктуризацию массива из двух элементов, который созвращает хук useState
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
   /* const result  = useState(0);
   console.log(result);
   const count = result[0];
@@ -15,9 +15,9 @@ function Counter() {
   console.log(setCount); */
 
   //Шаг 3 - необходимо прописать функции, которые будут менять состояние. внутри этих функций нужно использовать setCount
-  const onPlusClick = ():void => setCount((prevValue:number) => prevValue + 1);
+  const onPlusClick = ():void => setCount((prevValue) => prevValue + 1);
 
-  const onMinusClick = ():void => setCount((prevValue:number) => prevValue - 1);
+  const onMinusClick = ():void => setCount((prevValue) => prevValue - 1);
 
   return (
     <div className='counter-container'>

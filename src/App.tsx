@@ -1,7 +1,7 @@
 import './App.css';
 
 //lessons
-import Lesson06 from './lessons/lesson06/Lesson06';
+import Lesson07 from './lessons/lesson07/Lesson07';
 
 //homeworks
 
@@ -10,7 +10,7 @@ import Lesson06 from './lessons/lesson06/Lesson06';
 function App() {
   return (
     <div className="App">
-      <Lesson06/>
+      <Lesson07/>
     </div>
   );
 }

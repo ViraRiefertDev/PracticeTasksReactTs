@@ -1,12 +1,13 @@
-import './styles.css';
 import Input from '../Input/Input';
 import Button from '../Button/Button';
+import {LoginFormWrapper, LoginFormTitle,InputsContainer} from './styles';
 
 function LoginForm() {
   return (
-    <form className='login-form-wrapper' method='POST'>
-      <h4 className='login-form-title'>Login form</h4>
-      <div className='inputs-container'>
+    
+  <LoginFormWrapper>
+          <LoginFormTitle>Login form</LoginFormTitle>
+      <InputsContainer>
         <Input
           name='email'
           id='user_email'
@@ -21,9 +22,9 @@ function LoginForm() {
           placeholder='Enter your password'
           label='Password'
         />
-      </div>
+      </InputsContainer>
       <Button name='Login' type='submit' />
-    </form>
+    </LoginFormWrapper>
   );
 }
 
