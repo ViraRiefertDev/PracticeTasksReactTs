@@ -1,6 +1,6 @@
-import './styles.css';
 import Button from '../Button/Button';
 import { useState } from 'react';
+import { ButtonsContainer, ButtonWrapper, FeedbackContainer,LikesAndDislikesCount, ResetResultWrapper } from './styles';
 
 function Feedback() {
   const [likesCount, setLikesCount] = useState<number>(0);
@@ -19,24 +19,24 @@ function Feedback() {
     setDislikesCount(0);
   };
   return (
-    <div className='feedback-container'>
-      <div className='buttons-container'>
-        <div className='button-like-wrapper'>
-          <span className='likes-count'>{likesCount}</span>
+    <FeedbackContainer>
+      <ButtonsContainer>
+        <ButtonWrapper>
+          <LikesAndDislikesCount className='likes-count'>{likesCount}</LikesAndDislikesCount>
           <Button onClick={onLikeClick} name='👍 Like' />
-        </div>
-        <div className='button-dislike-wrapper'>
+        </ButtonWrapper>
+        <ButtonWrapper>
           <Button onClick={onDislikeClick} name='👎 Dislike' />
 
-          <span className='dislikes-count'>{dislikesCount}</span>
-        </div>
-      </div>
+          <LikesAndDislikesCount>{dislikesCount}</LikesAndDislikesCount>
+        </ButtonWrapper>
+      </ButtonsContainer>
       {(likesCount || dislikesCount) > 0 && (
-        <div className='reset-result-wrapper'>
+        <ResetResultWrapper className='reset-result-wrapper'>
           <Button onClick={onResetResultClick} name='Reset Result'/>
-        </div>
+        </ResetResultWrapper>
       )}
-    </div>
+    </FeedbackContainer>
   );
 }
 

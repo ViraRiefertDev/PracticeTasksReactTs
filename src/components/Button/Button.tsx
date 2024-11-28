@@ -1,9 +1,9 @@
-import './styles.css';
 import { ButtonProps } from './types';
+import { MainButton } from './styles';
 
-function Button({name,type = 'button', onClick }:ButtonProps) {
+function Button({name,type = 'button', onClick, disabled }:ButtonProps) {
   return (
-    <button onClick={onClick} className='main-button' type={type}>{name}</button>
+    <MainButton type={type} onClick={onClick} className='main-button' disabled={disabled}>{name}</MainButton>
   );
 }
 
