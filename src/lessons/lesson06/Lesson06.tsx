@@ -1,4 +1,6 @@
+import { Lessson06Container } from './styles';
 import './styles.css';
+
 
 function Lesson06() {
   // 1. Типизация строк
@@ -138,6 +140,6 @@ function Lesson06() {
   console.log(zoo);
   
 
-  return <div className='lesson06-container'>Lesson 6 - Type Script</div>;
+  return <Lessson06Container>Lesson 6 - Type Script</Lessson06Container>;
 }
 export default Lesson06;

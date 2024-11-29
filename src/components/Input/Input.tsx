@@ -1,16 +1,16 @@
-import { InputLabel, InputWrapper,InputEl} from './styles';
+import { InputLabel, InputContainer,InputEl} from './styles';
 import { IInputProps } from './types';
 
 function Input({ name, type = 'text', placeholder, label, id }: IInputProps) {
   return (
-    <InputWrapper>
+    <InputContainer>
       {label && (
         <InputLabel htmlFor={id}>
           {label}
         </InputLabel>
       )}
       <InputEl id={id} type={type} name={name} placeholder={placeholder} />
-    </InputWrapper>
+    </InputContainer>
   );
 }
 

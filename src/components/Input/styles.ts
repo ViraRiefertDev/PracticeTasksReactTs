@@ -7,7 +7,7 @@ export const InputLabel = styled.label`
   color: #6f6f6f;
 `;
 
-export const InputWrapper = styled.div`
+export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -19,6 +19,7 @@ export const InputEl = styled.input`
   padding: 12px;
   border: 1px solid #000;
   border-radius: 4px;
+  
   &::placeholder {
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
