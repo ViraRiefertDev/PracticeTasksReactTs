@@ -30,19 +30,20 @@ export const InputsContainer = styled.div`
   gap: 40px;
 `;
 
-export const BlocksContainer = styled.div`
+export const BlocksContainer = styled.div<{ disabled: boolean }>`
   display: flex;
   gap: 30px;
+  opacity:${({ disabled }) => (disabled ? '100%' : '0%')};
 `;
 
-export const Block1 = styled.div<{ disabled: boolean }>`
+export const Block1 = styled.div`
   ${blockStyles}
-  opacity:${({ disabled }) => (disabled ? '100%' : '0%')};
+  
   background-color: lightblue;
 `;
 
-export const Block2 = styled.div<{ disabled: boolean }>`
+export const Block2 = styled.div`
   ${blockStyles}
-  opacity:${({ disabled }) => (disabled ? '100%' : '0%')};
+ 
 background-color: lightcoral
 `;
