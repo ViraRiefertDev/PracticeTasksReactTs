@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from 'react';
 import Button from '../../components/Button/Button';
-import Input from '../../components/Input/Input';
+//
+import Input from 'components/Input/Input';
 import {
   Title,
   HW08Container,
@@ -21,8 +22,9 @@ function Homework08() {
 
   const isButtonDisabled = !data.firstName.trim() || !data.secondName.trim();
 
-  function handleButtonOnClick() {
-    setShowBlocks(true);
+  function handleButtonOnClick():void {
+    //! реализация toggle для кнопки
+    setShowBlocks(!showBlocks);
   }
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
