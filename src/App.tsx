@@ -3,6 +3,7 @@ import Lesson06 from './lessons/lesson06/Lesson06';
 import Lesson07 from './lessons/lesson07/Lesson07';
 import Lesson08 from './lessons/Lesson08/Lesson08';
 import Lesson09 from './lessons/Lesson09/Lesson09';
+import Consultation05 from './consultations/Consultation05/Consultation05';
 
 
 //lessons
@@ -25,7 +26,8 @@ function App() {
       {/* <Consultation04/> */}
       {/* <Homework07/> */}
       {/* <Lesson08/> */}
-      <Lesson09/>
+      {/* <Lesson09/> */}
+      <Consultation05/>
 
     </>
   );

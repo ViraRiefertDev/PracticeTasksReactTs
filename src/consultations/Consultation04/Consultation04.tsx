@@ -33,7 +33,7 @@ function Consultation04() {
 
   return (
     <Consultation04Container>
-      <ProductItem product='milk'/>
+      {/* <ProductItem product='milk'/> */}
     </Consultation04Container>
   );
 }
