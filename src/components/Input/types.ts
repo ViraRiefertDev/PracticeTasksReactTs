@@ -4,4 +4,6 @@ export interface IInputProps {
   placeholder?: string;
   label?: string;
   id?: string;
+  value?:string;
+  onChange?:()=>void;
 }
