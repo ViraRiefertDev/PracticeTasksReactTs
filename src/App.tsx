@@ -10,8 +10,8 @@ import Lesson09 from './lessons/Lesson09/Lesson09';
 import HW09Lesson from './homeworks/Hw09Lesson/Hw09Lesson';
 
 //homeworks
-/* import Homework07 from './homeworks/Homework07/Homework07';
-*/
+/* import Homework07 from './homeworks/Homework07/Homework07';*/
+import Homework09 from './homeworks/Homework09/Homework09';
 //consultations
 /* import Consultation04 from './consultations/Consultation04/Consultation04'; */
 /* import Consultation05 from './consultations/Consultation05/Consultation05'; */
@@ -30,6 +30,7 @@ function App() {
       {/* <Lesson09/> */}
       {/* <Consultation05/> */}
       <HW09Lesson/>
+
 
     </>
   );
