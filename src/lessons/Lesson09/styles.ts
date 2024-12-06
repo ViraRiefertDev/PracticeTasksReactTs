@@ -1,18 +1,7 @@
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 
-//шаблон типа как мы задавали один общий стиль и модификации для него
-const boxBasicStyles = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
-  border: 2px solid;
-  border-radius: 8px;
-`;
 
-export const Lesson08Container = styled.div`
+export const Lesson09Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,4 +32,7 @@ export const InputExample = styled.input`
   &::placeholder {
     color: #a19f9f;
   }
+export const ResultBlock = styled.div`
+  padding: 10px;
+  border: 2px solid blueviolet;
 `;
