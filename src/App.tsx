@@ -7,6 +7,7 @@ import GlobalStyles from './styles/GlobalStyles';
 /* import Lesson07 from './lessons/lesson07/Lesson07'; */
 /* import Lesson08 from './lessons/Lesson08/Lesson08'; */
 import Lesson09 from './lessons/Lesson09/Lesson09';
+import HW09Lesson from './homeworks/Hw09Lesson/Hw09Lesson';
 
 //homeworks
 /* import Homework07 from './homeworks/Homework07/Homework07';*/
@@ -28,7 +29,8 @@ function App() {
       {/* <Lesson08/> */}
       {/* <Lesson09/> */}
       {/* <Consultation05/> */}
-      <Homework09/>
+      <HW09Lesson/>
+
 
     </>
   );
