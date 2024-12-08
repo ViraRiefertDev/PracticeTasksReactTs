@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/PracticeTasksReactTs/static/js/main.7ebe1862.js",
+    "static/media/todoIcon.svg": "/PracticeTasksReactTs/static/media/todoIcon.32e4cacf5b5d9b13c85640a5494824f5.svg",
+    "static/media/basket.svg": "/PracticeTasksReactTs/static/media/basket.e755f208c0c5c3ff07d79054f28c64fb.svg",
+    "static/media/check.svg": "/PracticeTasksReactTs/static/media/check.94a7dd7fe58c47b0c7e70e230f208a2a.svg",
+    "static/media/reload.svg": "/PracticeTasksReactTs/static/media/reload.612f6d14b2a3fc67b9b50693c39835ba.svg",
+    "index.html": "/PracticeTasksReactTs/index.html",
+    "main.7ebe1862.js.map": "/PracticeTasksReactTs/static/js/main.7ebe1862.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7ebe1862.js"
+  ]
+}
