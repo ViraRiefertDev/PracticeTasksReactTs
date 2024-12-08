@@ -1,9 +1,16 @@
-import { ButtonProps } from './types';
 import { MainButton } from './styles';
+import { ButtonProps } from './types';
 
-function Button({name,type = 'button', onClick, disabled = false, buttonWidth='100%'}:ButtonProps) {
+function Button({
+  type = 'button',
+  onClick,
+  children,
+  isDecrementDisabled,
+}: ButtonProps) {
   return (
-    <MainButton buttonWidth={buttonWidth} type={type} onClick={onClick} disabled={disabled}>{name}</MainButton>
+    <MainButton type={type} onClick={onClick} disabled={isDecrementDisabled}>
+      {children}
+    </MainButton>
   );
 }
 

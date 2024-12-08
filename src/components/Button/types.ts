@@ -1,9 +1,9 @@
-type ButtonType = 'submit'| 'button' | 'reset'
+import { ReactNode } from "react";
 
 export interface ButtonProps{
-  name:string;
-  type?:ButtonType;
-  onClick?: () => void;
-  disabled?:boolean;
-  buttonWidth?: string;
+  type?:'submit'|'button'|'reset';
+  onClick?: ()=>void;
+  children:ReactNode;
+  isDecrementDisabled?:boolean;
+
 }

@@ -1,35 +1,26 @@
-import Button from '../Button/Button';
-//Шаг 1- импорт хука useState из React
-/* import { useState } from 'react'; */
-import { CounterContainer, ButtonWrapper, CounterResult } from './styles';
+import { ButtonLabel, CounterContainer, CounterValue } from './styled';
+import Button from 'components/Button/Button';
 import { CounterProps } from './types';
+import { ReactComponent as PlusIcon } from 'assets/plus-icon.svg';
+import { ReactComponent as MinusIcon } from 'assets/minus-icon.svg';
 
-
-function Counter({countValue, onPlusClick, onMinusClick}:CounterProps) {
-  //Шаг 2 - вызываем хуки useState и передаем в него первоначальное состояние (InitialState)
-  //делаем деструктуризацию массива из двух элементов, который созвращает хук useState
-/*   const [count, setCount] = useState<number>(0); */
-  /* const result  = useState(0);
-  console.log(result);
-  const count = result[0];
-  console.log(count);
-  const setCount = result[1];
-  console.log(setCount); */
-
-  //Шаг 3 - необходимо прописать функции, которые будут менять состояние. внутри этих функций нужно использовать setCount
-/*   const onPlusClick = ():void => setCount((prevValue) => prevValue + 1);
-
-  const onMinusClick = ():void => setCount((prevValue) => prevValue - 1); */
-
+function Counter({
+  value,
+  incrementCounter,
+  decrementCounter,
+  isDecrementDisabled,
+}: CounterProps) {
   return (
     <CounterContainer>
-      <ButtonWrapper>
-        <Button name='-' onClick={onMinusClick} />
-      </ButtonWrapper>
-      <CounterResult >{countValue}</CounterResult>
-      <ButtonWrapper>
-        <Button name='+' onClick={onPlusClick} />
-      </ButtonWrapper>
+      <Button onClick={decrementCounter} isDecrementDisabled={isDecrementDisabled}>
+        {<ButtonLabel>Minus</ButtonLabel>}
+        <MinusIcon width={20} height={20} />
+      </Button>
+      <CounterValue>{value}</CounterValue>
+      <Button onClick={incrementCounter}>
+        <ButtonLabel>Plus</ButtonLabel>
+        <PlusIcon width={20} height={20} />
+      </Button>
     </CounterContainer>
   );
 }

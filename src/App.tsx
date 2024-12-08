@@ -1,32 +1,20 @@
 import GlobalStyles from './styles/GlobalStyles';
 
-
-//lessons
-/* import Lesson06 from './lessons/lesson06/Lesson06'; */
-/* import Lesson07 from './lessons/lesson07/Lesson07'; */
-/* import Lesson08 from './lessons/Lesson08/Lesson08'; */
-
-
-//consultations
-/* import Consultation04 from './consultations/Consultation04/Consultation04'; */
-/* import Consultation05 from './consultations/Consultation05/Consultation05'; */
+//tasks
+import Task1Counter from 'tasks/Task1Counter/Task1Counter';
+import Task2Counter from 'tasks/Task2Counter/Task2Counter';
+import Task03TodoApp from 'tasks/Task3TodoApp/Task03TodoApp';
+import Task3_1TodoApp from 'tasks/Task3_1TodoApp/Task3_1TodoApp';
 
 function App() {
   return (
-    //<></> фрагмент
     <>
-      <GlobalStyles/>
-      {/* <Lesson07/> */}
-      {/* <Lesson06/> */}
-      {/* <Lesson07/> */}
-      {/* <Consultation04/> */}
-      {/* <Homework07/> */}
-      {/* <Lesson08/> */}
-      <Homework08/>
-      {/* <Lesson09/> */}
-      {/* <Consultation05/> */}
-      <HW09Lesson/>
-
+      <GlobalStyles />
+      {/* <Task1Counter/> */}
+      {/* <Task2Counter/> */}
+      {/* <Task03TodoApp/> */}
+      <Task03TodoApp />
+      {/* <Task3_1TodoApp/> */}
     </>
   );
 }
