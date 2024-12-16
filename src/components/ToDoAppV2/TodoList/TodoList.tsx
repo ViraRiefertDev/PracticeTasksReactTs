@@ -4,12 +4,13 @@ import { TodoListContainer, EmptyTitle } from './styles';
 import { TodoListProps } from './types';
 
 function TodoList({ todos, deleteTodo }: TodoListProps) {
+  const createTodoList = todos.map((todo) => (
+    <Todo key={todo.id} todo={todo} deleteTodo={deleteTodo} />
+  ));
   return (
     <TodoListContainer>
-      {todos.length === 0 && <EmptyTitle>Todo list is empty</EmptyTitle>}
-      {todos.map((todo) => (
-        <Todo key={todo.id} todo={todo} deleteTodo={deleteTodo} />
-      ))}
+      {createTodoList}
+      {}
     </TodoListContainer>
   );
 }
